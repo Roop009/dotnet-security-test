@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "dgSpecHash": "GKQnDutuU1E=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roop\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0-preview.7.25380.108\\microsoft.aspnetcore.openapi.10.0.0-preview.7.25380.108.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.codeanalysis.netanalyzers\\7.0.4\\microsoft.codeanalysis.netanalyzers.7.0.4.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0\\microsoft.data.sqlclient.5.2.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0\\microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\roslynator.analyzers\\4.6.2\\roslynator.analyzers.4.6.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\securitycodescan.vs2019\\5.6.7\\securitycodescan.vs2019.5.6.7.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\sonaranalyzer.csharp\\9.12.0.78982\\sonaranalyzer.csharp.9.12.0.78982.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512",
+    "C:\\Users\\roop\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Error",
+      "message": "Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "projectPath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "filePath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "libraryId": "Azure.Identity",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Error",
+      "message": "Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
+      "projectPath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "filePath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "libraryId": "Azure.Identity",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Error",
+      "message": "Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "projectPath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "filePath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Error",
+      "message": "Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw",
+      "projectPath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "filePath": "C:\\Users\\roop\\Desktop\\SecurityTestProject\\VulnerableWebApp\\VulnerableWebApp.csproj",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

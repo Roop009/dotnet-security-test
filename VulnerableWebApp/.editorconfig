@@ -1,0 +1,26 @@
+root = true
+
+[*.cs]
+# Microsoft analyzer rules
+dotnet_analyzer_diagnostic.category-security.severity = error
+dotnet_analyzer_diagnostic.category-reliability.severity = error
+dotnet_analyzer_diagnostic.category-performance.severity = warning
+
+# Security Code Scan rules
+dotnet_diagnostic.SCS0001.severity = error  # Command Injection
+dotnet_diagnostic.SCS0002.severity = error  # SQL Injection
+dotnet_diagnostic.SCS0007.severity = error  # XML eXternal Entity Injection
+dotnet_diagnostic.SCS0016.severity = error  # CSRF
+dotnet_diagnostic.SCS0018.severity = error  # Path Traversal
+dotnet_diagnostic.SCS0029.severity = error  # XSS
+
+# Roslynator rules
+dotnet_diagnostic.RCS1001.severity = warning # Add braces to if-else
+dotnet_diagnostic.RCS1036.severity = suggestion # Remove redundant empty line
+dotnet_diagnostic.RCS1194.severity = error # Implement exception constructors
+
+# SonarAnalyzer rules
+dotnet_diagnostic.S1134.severity = warning # FIXME comments
+dotnet_diagnostic.S1135.severity = warning # TODO comments
+dotnet_diagnostic.S2068.severity = error   # Hard-coded credentials
+dotnet_diagnostic.S2077.severity = error   # SQL injection

@@ -1,0 +1,8 @@
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.csproj.AssemblyReference.cache
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.AssemblyInfoInputs.cache
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.AssemblyInfo.cs
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.csproj.CoreCompileInputs.cache
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\roop\Desktop\SecurityTestProject\VulnerableWebApp\obj\Debug\net10.0\VulnerableWebApp.MvcApplicationPartsAssemblyInfo.cache

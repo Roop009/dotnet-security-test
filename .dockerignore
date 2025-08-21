@@ -1,0 +1,30 @@
+# General
+.DS_Store
+.env
+*.user
+*.suo
+*.swp
+.idea/
+.vscode/
+.vs/
+.git/
+
+# .NET build artifacts
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+**/AppPackages/
+**/artifacts/
+
+# Node/npm (if any frontend assets exist later)
+node_modules/
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# Docker
+Dockerfile.*
+docker-compose.*.yml
+docker-compose.override.yml
+
