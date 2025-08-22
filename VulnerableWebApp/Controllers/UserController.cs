@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace VulnerableWebApp.Controllers
 {
@@ -40,25 +40,16 @@ namespace VulnerableWebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] User? user)
+        public async Task<IActionResult> CreateUser([FromBody] User user)
         {
-            if (user is null)
-            {
-                return BadRequest("User payload is required");
-            }
-
             // ❌ BUG: No null validation
-            var upperName = (user.Name ?? string.Empty).ToUpper();
+            var name = user.Name.ToUpper(); // Potential null reference exception
             
             // ❌ SECURITY ISSUE: SQL Injection in INSERT
             using var connection = new SqlConnection(_connectionString);
             await connection.OpenAsync();
             
-            var name = user.Name ?? string.Empty;
-            var email = user.Email ?? string.Empty;
-            var password = user.Password ?? string.Empty;
-
-            var insertQuery = $"INSERT INTO Users (Name, Email, Password) VALUES ('{name}', '{email}', '{password}')";
+            var insertQuery = $"INSERT INTO Users (Name, Email, Password) VALUES ('{user.Name}', '{user.Email}', '{user.Password}')";
             var command = new SqlCommand(insertQuery, connection);
             
             await command.ExecuteNonQueryAsync();
@@ -85,7 +76,7 @@ namespace VulnerableWebApp.Controllers
                 return BadRequest("Query too long");
             }
 
-            if (query.Contains('\''))
+            if (query.Contains("'"))
             {
                 return BadRequest("Invalid characters");
             }
@@ -95,7 +86,7 @@ namespace VulnerableWebApp.Controllers
                 return BadRequest("Invalid characters");
             }
 
-            if (query.Contains(';'))
+            if (query.Contains(";"))
             {
                 return BadRequest("Invalid characters");
             }
@@ -121,8 +112,8 @@ namespace VulnerableWebApp.Controllers
     // ❌ CODE SMELL: Missing validation attributes
     public class User
     {
-        public string Name { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
